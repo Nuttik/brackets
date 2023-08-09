@@ -5,7 +5,7 @@ module.exports = function check(str, bracketsConfig) {
     bracketsConfig.map((item) => {
       if (!item.includes(str[i])) {
         return false;
-      } else if (item[0] == item[i]) {
+      } else if (item[0] == item[1]) {
         if (result[result.length - 1] == item[0]) {
           result.pop();
         } else {
