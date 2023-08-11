@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
-  let result = [];
+  if (str.length % 2 != 0) return false;
 
-  if (str.length % 2 !== 0) return false;
+  let result = [];
 
   for (let i = 0; i < str.length; i++) {
     bracketsConfig.forEach((item) => {
